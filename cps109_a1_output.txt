@@ -1,0 +1,21 @@
+In the case where there are no issues, the following lines will be output to the terminal:
+
+    File: a1_inputDNA.txt read successfully
+    DNA transcribed successfully
+    File Writing to 'RNAOutput.txt' successful
+    RNA translated successfully
+    File Writing to 'ProteinOutput.txt' successful
+
+    DNA transcribed and translated in 0.0307 seconds.
+    Please check RNAOutput.txt and ProteinOutput.txt for your respective RNA and Protein outputs
+
+
+If the program is run with an incorrect file name, it will raise a FileNotFoundError:
+    FileNotFoundError: [Errno 2] No such file or directory: 'a_inputDNA.txt'
+
+
+In the case where there is no stop codon, the following message will be printed to the terminal, but the program continues to run: 
+    No stop codon found, improper protein may be synthesized incorrectly
+
+Without a start codon, the following exception message will be reaised and the program will stop:
+    Exception: Translation cannot occur
